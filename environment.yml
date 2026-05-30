@@ -1,0 +1,14 @@
+name: egm722
+channels:
+  - defaults
+dependencies:
+  - pyepsg
+  - python
+  - geopandas
+  - folium
+  - cartopy[version='>=0.21']
+  - rasterio
+  - ipympl
+  - ipywidgets
+  - jupyterlab
+prefix: /opt/anaconda3/envs/egm722
