@@ -16,7 +16,8 @@ def load_location_data(csv_path):
     Returns:
         pandas.DataFrame: Table containing location names, latitudes, and longitudes.
     """
-    return pd.read_csv(csv_path)
+    # Load location data from the input CSV file
+return pd.read_csv(csv_path)
 
 
 def create_location_map(data):
@@ -29,15 +30,18 @@ def create_location_map(data):
     Returns:
         folium.Map: Interactive map containing location markers.
     """
-    centre_latitude = data["latitude"].mean()
-    centre_longitude = data["longitude"].mean()
+    # Calculate average coordinates to centre the map
+centre_latitude = data["latitude"].mean()
+centre_longitude = data["longitude"].mean()
 
-    location_map = folium.Map(
+    # Create an interactive map centred on the input locations
+location_map = folium.Map(
         location=[centre_latitude, centre_longitude],
         zoom_start=7
     )
 
-    for _, row in data.iterrows():
+    # Add a marker for each location in the dataset
+for _, row in data.iterrows():
         folium.Marker(
             location=[row["latitude"], row["longitude"]],
             popup=row["name"]
@@ -54,7 +58,8 @@ def save_map(location_map, output_path):
         location_map (folium.Map): The map to save.
         output_path (str): Path for the output HTML file.
     """
-    location_map.save(output_path)
+    # Export the map as an HTML file
+location_map.save(output_path)
 
 
 if __name__ == "__main__":
