@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b8c5e10af6ec394213405efc40759f7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9b8c5e10af6ec394213405efc40759f7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9b8c5e10af6ec394213405efc40759f7 = L.map(
+                "map_9b8c5e10af6ec394213405efc40759f7",
+                {
+                    center: [50.982375000000005, -3.155875],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bb345fedd052c36fb1f2505414d45ab9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_bb345fedd052c36fb1f2505414d45ab9.addTo(map_9b8c5e10af6ec394213405efc40759f7);
+        
+    
+            var marker_ad310f18e070671c6e6e6ce20270350d = L.marker(
+                [50.7184, -3.5339],
+                {
+}
+            ).addTo(map_9b8c5e10af6ec394213405efc40759f7);
+        
+    
+        var popup_59afadaca1186c5eb6525360dc55c47a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6aab237a5dbfeea02f89f0d3feffe680 = $(`<div id="html_6aab237a5dbfeea02f89f0d3feffe680" style="width: 100.0%; height: 100.0%;">Exeter</div>`)[0];
+                popup_59afadaca1186c5eb6525360dc55c47a.setContent(html_6aab237a5dbfeea02f89f0d3feffe680);
+            
+        
+
+        marker_ad310f18e070671c6e6e6ce20270350d.bindPopup(popup_59afadaca1186c5eb6525360dc55c47a)
+        ;
+
+        
+    
+    
+            var marker_bcdd16d72ec8866f0301ee091da18c21 = L.marker(
+                [50.3755, -4.1427],
+                {
+}
+            ).addTo(map_9b8c5e10af6ec394213405efc40759f7);
+        
+    
+        var popup_42c5b4c1c9939022323948d7dfeed75b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b04a9196822129b28fa0e8d3cd1dc523 = $(`<div id="html_b04a9196822129b28fa0e8d3cd1dc523" style="width: 100.0%; height: 100.0%;">Plymouth</div>`)[0];
+                popup_42c5b4c1c9939022323948d7dfeed75b.setContent(html_b04a9196822129b28fa0e8d3cd1dc523);
+            
+        
+
+        marker_bcdd16d72ec8866f0301ee091da18c21.bindPopup(popup_42c5b4c1c9939022323948d7dfeed75b)
+        ;
+
+        
+    
+    
+            var marker_490acf9b72187d225f27f0f07a53494e = L.marker(
+                [51.4545, -2.5879],
+                {
+}
+            ).addTo(map_9b8c5e10af6ec394213405efc40759f7);
+        
+    
+        var popup_8376b3c45bb756738144ccfcbcd423f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_671a04cef620f7d43e13eacd9d0f4b76 = $(`<div id="html_671a04cef620f7d43e13eacd9d0f4b76" style="width: 100.0%; height: 100.0%;">Bristol</div>`)[0];
+                popup_8376b3c45bb756738144ccfcbcd423f0.setContent(html_671a04cef620f7d43e13eacd9d0f4b76);
+            
+        
+
+        marker_490acf9b72187d225f27f0f07a53494e.bindPopup(popup_8376b3c45bb756738144ccfcbcd423f0)
+        ;
+
+        
+    
+    
+            var marker_73a14d0e3cd1a9106617c0bbcceab180 = L.marker(
+                [51.3811, -2.359],
+                {
+}
+            ).addTo(map_9b8c5e10af6ec394213405efc40759f7);
+        
+    
+        var popup_d2e8cbe1096d8bee86f89e041a522419 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bb9dfb4783f6a787951739300139ea3 = $(`<div id="html_5bb9dfb4783f6a787951739300139ea3" style="width: 100.0%; height: 100.0%;">Bath</div>`)[0];
+                popup_d2e8cbe1096d8bee86f89e041a522419.setContent(html_5bb9dfb4783f6a787951739300139ea3);
+            
+        
+
+        marker_73a14d0e3cd1a9106617c0bbcceab180.bindPopup(popup_d2e8cbe1096d8bee86f89e041a522419)
+        ;
+
+        
+    
+</script>
+</html>
